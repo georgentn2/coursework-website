@@ -1,0 +1,344 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h4,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+article,
+aside,
+canvas,
+details,
+embed,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+fieldset,
+form,
+label,
+legend,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style: none;
+}
+/*==================*/
+/*CSS styling */
+:root {
+  --primary-color: #2d593c;
+  --secondory-color: #4a8c61;
+  --heading-color: #3d4032;
+  --muted-color: #828c72;
+  --faded-color: #a0ab8d;
+  --bg-color: #eef2e9;
+}
+/*Styling the body*/
+body {
+  background-color: var(--bg-color);
+  background-attachment: scroll;
+  background-size: cover;
+  padding-top: 5rem;
+}
+
+/* header navigation bar */
+nav ul {
+  width: 100%;
+  margin-top: -81px;
+  padding: 1rem;
+  color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--faded-color);
+  font-size: 1.5rem;
+  box-shadow: 3px 4px 6px #979797;
+
+}
+nav ul li:first-child {
+  text-align: left;
+  margin-top: 10px;
+  cursor: pointer;
+}
+nav ul li:nth-child(2) {
+  color: white;
+  margin-top: 13px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 900;
+letter-spacing: -1px;
+}
+nav ul li:last-child {
+  margin-top: 10px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+/*main section and common elements design*/
+
+/* main section */
+
+main {
+  margin: 0 auto;
+  max-width: 85%;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+
+  margin-top: 5rem;
+}
+.main-section {
+  background-image: url("./img/profile-image-2.png");
+  height: 800px;
+  margin: 0 auto;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* animation for rotating background */
+@keyframes zoom {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Headings */
+
+main h1 {
+  font-size: 2.3rem;
+  background-color: var(--faded-color);
+  color: var(--bg-color);
+  font-weight: 600;
+  padding:2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  font-weight: 900;
+letter-spacing: -2px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+main h2 {
+  font-size: 2rem;
+  color: var(--font-color);
+  font-weight: 500;
+  padding: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 0;
+  font-weight: 900;
+letter-spacing: -1px;
+text-transform: uppercase;
+}
+main h3 {
+  font-size: 1.7rem;
+  color: var(--bg-color);
+  font-weight: 700;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--primary-color);
+  margin: 0 1rem 0.5rem 1rem;
+  font-weight: 900;
+letter-spacing: -1px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+main h4 {
+  font-size: 1.2rem;
+  color: var(--font-color);
+  line-height: 1.6rem;
+  font-weight: 400;
+  padding: 2rem;
+  animation: colorchange 6s infinite;
+  background:#5f79340a;
+  margin-top: 1.5rem;
+  border-radius: 13px;
+}
+main h4 span {
+  font-size: 2.5rem;
+  color: var(--font-color);
+  font-weight: 300;
+}
+/* courses section styling */
+.courses {
+  width: 100%;
+  height: auto;
+}
+.courses div {
+  border-radius: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow:0px 20px 50px rgba(134, 134, 134, 0.178);
+  background-color: var(--faded-color);
+}
+
+.courses div:hover {
+  box-shadow: 0px 20px 50px rgba(134, 134, 134, 0.32);
+  background-color: var(--muted-color);
+  transition: entry 0.5s ease-in-out;
+}
+.courses div ul {
+  padding: 1rem 2rem;
+  list-style-type: square;
+  margin: 0rem 1rem 1rem 1rem;
+  background: #f0ffff59;
+  border-radius: 1rem;
+  font-family: 'inter', sans-serif;
+}
+
+.courses div ul li {
+  color: var(--font-color);
+  font-weight: 500;
+  padding: 0.2rem;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.courses div ul li a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: 'inter', sans-serif;
+}
+.courses div ul li ul {
+  list-style-type: circle;
+  background: none;
+}
+.courses div ul li ul a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.courses div ul li ul a :visited {
+  color: var(--primary-color);
+}
+.courses div ul li ul a:hover {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+.courses div ul li ul a:active {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+/* footer of webpage */
+footer {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5rem;
+  font-size: 16px;
+  color: var(--bg-color);
+  text-align: center;
+  padding: 7em 1em 1em 1em;
+  height: 9rem;
+  background-color: black;
+}
+footer h4 {
+  color: var(--muted-color);
+  margin-top: 2rem;
+}
+
+
+@media only screen and (min-width: 200px) {
+  .main-section {
+    height: 190px;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .main-section {
+    height: 290px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .main-section {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-section {
+    height: 720px;
+  }
+}
+

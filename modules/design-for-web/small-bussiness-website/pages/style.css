@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*================================== END OF ERIC MEYER CSS RESET ====================*/
+
+body {
+  width: vw;
+  height: 100vh;
+  margin: auto;
+  color: white;
+}
+
+.container {
+  background: white;
+}
+nav > div {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+  padding: 1em 3em 1em 3em;
+  width: 150px;
+}
+nav ul li img {
+  margin-left: 40px;
+  margin-top: -20px;
+}
+
+/* Heading section */
+
+h1 {
+  font-size: 11em;
+  color: white;
+}
+
+h2 {
+  font-size: 3em;
+  color: #642627;
+}
+h3 {
+  color: #642627;
+  font-size: 3em;
+}
+h4 {
+  font-size: 2em;
+  color: #642627;
+}
+
+/* heros section */
+.container {
+  background: radial-gradient(#642627, #191919);
+}
+main {
+  background-image: url(../logo/side-bg.png);
+  background-size: cover;
+  height: 400px;
+}
+main div {
+  background: black;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 41%;
+}
+main div h3 {
+  margin-top: 80px;
+  position: absolute;
+  margin-left: 35px;
+  color: white;
+  text-transform: capitalize;
+}
+main div h4 {
+  margin-top: 130px;
+  text-transform: capitalize;
+  position: absolute;
+  margin-left: 30px;
+  color: white;
+}
+section{
+    background-image: url(../logo/bg-lines.png);
+    overflow-x: auto;
+}
+
+/* about title section */
+section div:nth-of-type(1) {
+  display: flex;
+  margin: 4em;
+}
+
+section div:nth-of-type(1) > :first-child {
+  padding:1em 1em 0em 1em;
+}
+section div:nth-of-type(1) > article{
+    margin: 6em;
+}
+
+section div:nth-of-type(1) > article > h1 {
+  color: #bba881;
+  font-size: 4em;
+}
+section div:nth-of-type(1) > article > h2 {
+  color: #000000;
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+}
+section div:nth-of-type(1) > article > h3 {
+  color: #414040;
+  font-size: 2.6em;
+  margin-bottom: 0.4em;
+}
+
+section div:nth-of-type(1) > article > p {
+  color: rgb(0, 0, 0);
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+}
+section div:nth-of-type(1) > article > button {
+  padding: 1em 3em 1em 3em;
+  border-radius: 10px;
+  color: white;
+  background: #7a1b1b;
+}
+
+/* why people belive in us section */
+section div:nth-of-type(2) {
+  display: flex;
+  margin: 4em 12em 0em 4em;
+}
+section div:nth-of-type(2):first-child {
+  padding: 4em 4em 0em 4em;
+}
+section div:nth-of-type(2) > article{
+    margin-top: 7em;
+    padding: 0em 2em 2em 10em;
+}
+section div:nth-of-type(2) > article > h3 {
+  color: #414040;
+  font-size: 2.6em;
+  margin-bottom: 0.4em;
+  padding-right: 3em;
+}
+
+section div:nth-of-type(2) > article > p {
+  color: rgb(0, 0, 0);
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+  padding-right: 3em;
+}
+
+/* our qualities section */
+section div:nth-of-type(3) {
+    display: flex;
+    margin: 0em 4em 1em 4em;
+  }
+  section div:nth-of-type(3)>div{
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+section div:nth-of-type(3)>span>article {
+    display: flex;
+    margin: 2em 4em 0em 4em;
+  }
+  section div:nth-of-type(3) >span>article> aside>p{
+color: black;
+  }
+  section div:nth-of-type(3)>span{
+    margin: 9em 4em 0em 4em;
+}
+
+  /* best for you section */
+  section div:nth-of-type(4) {
+    display: flex;
+    margin: 0em 12em 6em 4em;
+  }
+  section div:nth-of-type(4):first-child {
+    padding: 4em 4em 0em 4em;
+  }
+  section div:nth-of-type(4) > article{
+      margin-top: 7em;
+      padding: 0em 2em 2em 8em;
+  }
+  section div:nth-of-type(4) > article > h3 {
+    color: #414040;
+    font-size: 1.6em;
+    margin-bottom: 0.4em;
+    padding-right: 3em;
+  }
+  
+  section div:nth-of-type(4) > article > p {
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+    padding-right: 3em;
+  }
+
+
+  /* footer */
+footer{
+    height:500px;
+    background-image: url(../logo/footer-hd.png);
+    background-size: cover;
+  background-color: #000000e3;
+  }
+  
+  footer>img{
+  text-align:center;
+  margin-left: 46%;
+  margin-top:2em;
+  }
+  footer>h3{
+    padding: 3em 5em 0em 5em;
+    text-align:center;
+    color:white;
+  }
+  

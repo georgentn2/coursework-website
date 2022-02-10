@@ -1,0 +1,132 @@
+/* 
+Primary color:
+Secondary color:#c792ea9c
+background: #1e272c
+background-overlay:#263238
+text color: #B0BEC5
+
+
+*/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+cite,
+em,
+caption,
+footer,
+header {
+  border: 0;
+  font: inherit;
+  font-size: inherit;
+  font-size: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #1e272c;
+  font-family: "Roboto", "Calibri", "Arial", "sans-serif";
+  font-size: 15px;
+  font-weight: 300;
+}
+main {
+  max-width: 800px;
+  background-color: #263238;
+  padding: 1rem 5rem 5rem 5rem;
+  margin: 0 auto;
+  border-radius: 0.9rem;
+}
+h1 {
+  color: #fff;
+  line-height: 4.62rem;
+  font-size: 3.2rem;
+  padding: 2rem 3rem 2rem 2rem;
+  text-align: center;
+  background-color: #009688;
+  transition: all 1s;
+}
+h1:hover {
+  background-color: #c792ea9c;
+  transition: background-color 0.8s ease;
+}
+cite {
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0rem 1rem 30rem;
+  display: block;
+  font-style: italic;
+}
+h2 {
+  font-size: 2.86rem;
+  font-weight: 300;
+  line-height: 3.916rem;
+  margin: 1.78rem 0 1.424rem 0;
+  color: #02c0ad;
+  border-left: 0.25rem solid #009688;
+  padding-left: 1rem;
+}
+h2:hover {
+  transition: border-left 0.8s ease;
+  border-left: 0.25rem solid #c792ea9c;
+}
+h3 {
+  color: #d390ffcf;
+  font-size: 1.86rem;
+  font-weight: 300;
+  line-height: 2.916rem;
+  margin: 1.78rem 0 1.424rem 0;
+  border-left: 0.25rem solid #c792ea9c;
+  padding-left: 1rem;
+}
+blockquote {
+  padding: 2rem 1rem 2rem 1rem;
+  color: #fff;
+  font-size: 1.9rem;
+  font-style: italic;
+}
+p {
+  font-size: large;
+  text-indent: 2rem;
+  color: #b0bec5;
+  line-height: 1.6rem;
+}
+p a {
+  color: #d390ffcf;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: italic;
+}
+p a:hover {
+  color: #ca7bffcf;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer {
+  color: #a09c9c;
+  margin: 0 auto;
+  font-size: 0.85em;
+  text-align: center;
+  margin-bottom: 0;
+  height: auto;
+  background: #1a2227;
+}
+
+footer p {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 5rem 3rem 3rem 1rem;
+}
+footer p em {
+  font-size: smaller;
+}

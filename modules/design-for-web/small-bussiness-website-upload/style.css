@@ -1,0 +1,1143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*================================== END OF ERIC MEYER CSS RESET ====================*/
+
+body {
+    height: 100vh;
+    margin: auto;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: .5em;
+}
+
+
+/* site logo svg */
+
+header a div {
+    margin-left: -12em;
+    width: 145px;
+    background-image: url(./logo/logo.svg), url(./logo/logo.png);
+    margin-top: .3em;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    margin-right: -14em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+
+nav ul li {
+    padding: 1em 2em 1em 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    border-bottom: 3px solid #e9dddd;
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    transition: 0.5s ease-in;
+    background-color: #feecc6;
+    border-bottom: 3px solid #bba881;
+}
+
+
+/* Links =================================== */
+
+a:link,
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #7a1b1b;
+}
+
+a:active,
+a:focus {
+    color: rgb(161, 134, 76);
+}
+
+
+/* Common Heading section */
+
+h1 {
+    font-size: 5em;
+    color: #feecc6;
+    font-family: "Playfair Display", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-family: "Playfair Display", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    color: #451616;
+}
+
+h3 {
+    color: #414040;
+    font-size: 2.6em;
+    text-transform: capitalize;
+    font-family: "Playfair Display", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+h4 {
+    font-size: 2em;
+    color: #642627;
+}
+
+h5 {
+    font-size: 1.4em;
+    color: #dac58b;
+    line-height: 1.5em;
+}
+
+P {
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    color: #1a1a1a;
+}
+
+figcaption {
+    color: #ffcda8;
+    font-size: 1.3em;
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+}
+
+button {
+    text-align: center;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    border-radius: 2em;
+    font-size: 1.2em;
+    background-color: #feecc6;
+    border: none;
+}
+
+span {
+    color: #8a1011;
+    font-family: "Playfair Display", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+}
+
+em {
+    font-weight: 900;
+    color: black;
+}
+
+
+/* Hero section design  */
+
+main {
+    height: 500px;
+    background-size: cover;
+    margin: 0 5em 0em 5em;
+    background-color: #f4e4e4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 3em;
+}
+
+main>article h2 {
+    padding-bottom: 1em;
+}
+
+main>article {
+    padding: 3em 0em 0em 4em;
+    border-radius: 0 20px 20px 0;
+}
+
+main>article p {
+    padding-bottom: 1em;
+    font-weight: 600;
+    color: #1d1b1b;
+}
+
+main>article p img {
+    margin-right: 0.5em;
+    margin-bottom: -0.5em;
+}
+
+
+/* Main page banner */
+
+.banner {
+    padding: 3em 1em 3em 1em;
+    display: flex;
+    background-color: #feecc6a8;
+    justify-content: center;
+    margin: 0em 5em 0em 5em;
+}
+
+.banner article {
+    padding: 2em;
+    border-right: 2px solid #c4bbabd4;
+    width: 30%;
+}
+
+.banner article>img {
+    margin: 2em 0em 0em 7.5em;
+}
+
+.banner article>h5 {
+    font-family: "Playfair Display", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    color: rgb(76, 58, 58);
+    font-weight: 600;
+    text-align: center;
+    padding: 0 1em 0 1em;
+}
+
+.banner article:last-child {
+    border: none;
+}
+
+
+/* Intro section section design */
+
+.intro-section .backsvg {
+    height: 239px;
+    width: 90px;
+    position: absolute;
+    background: url(./logo/line.svg);
+    background-repeat: repeat;
+    margin-top: -6em;
+}
+
+.intro-section {
+    display: flex;
+    margin: 3em 5em 2em 5em;
+}
+
+.intro-section>article {
+    padding: 3em 5em 5em 5em;
+    max-width: 50%;
+}
+
+.intro-section>article h3 {
+    padding: 0em 0em 1em 0em;
+    color: #3f3624;
+}
+
+.intro-section>article button:hover {
+    background-color: #e07a7a;
+    transition: 1s ease-in-out;
+}
+
+.intro-section>article button a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro-section>article>p {
+    color: #4c4c4c;
+    margin-bottom: 2em;
+}
+
+.intro-section>article>a {
+    text-align: center;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    border-radius: 2em;
+    font-size: 1.2em;
+    background-color: #feecc6;
+    color: black;
+    text-decoration: none;
+}
+
+.intro-section>img {
+    padding: 4em;
+    position: relative;
+    width: 50%;
+}
+
+
+/* scotlands section design */
+
+.scotland {
+    display: flex;
+    margin: 1em 5em 0 5em;
+}
+
+.scotland>article {
+    padding: 3em 5em 5em 5em;
+    max-width: 50%;
+}
+
+.scotland>article h3 {
+    padding: 0em 0em 1em 0em;
+    color: #3f3624;
+}
+.scotland>article h3 span{
+   font-weight: 900;
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+}
+.scotland>article button:hover {
+    background-color: #e07a7a;
+    transition: 1s ease-in-out;
+}
+
+.scotland>article button a {
+    text-decoration: none;
+    color: black;
+}
+
+.scotland>article>p {
+    color: #4c4c4c;
+    margin-bottom: 2em;
+}
+
+.scotland>article>a {
+    text-align: center;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-family: "Source sans pro", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    border-radius: 2em;
+    font-size: 1.2em;
+    background-color: #feecc6;
+    color: black;
+    text-decoration: none;
+}
+
+.scotland>div {
+    width: 500px;
+    height: 650px;
+    background-repeat: no-repeat;
+    margin-top: -9em;
+    background: url(./logo/scotland-map.png);
+    background: url(./logo/scotland-map.svg);
+}
+
+.scotland>img {
+    padding: 4em;
+    position: relative;
+    width: 50%;
+}
+
+
+/* Discover section design */
+
+.discover-section {
+    margin: 2em 9em 6em 9em;
+}
+
+.discover-section h4 {
+    text-align: center;
+    padding-bottom: 0.6em;
+}
+
+.discover-section h3 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #d4d4d4;
+}
+
+.discover-section div {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 4em;
+}
+
+.discover-section div article ul li {
+    color: #8a1011;
+    font-size: 1.5em;
+    list-style: circle;
+    padding-top: .5em;
+}
+
+.discover-section div article p {
+    padding-top: 2em;
+}
+
+.discover-section div figure img {
+    border-radius: 20px;
+    margin-left: 14px;
+}
+
+.discover-section div figure figcaption {
+    padding-left: .5em;
+    text-align: left;
+}
+
+.discover-section div figure figcaption>p:nth-of-type(1) {
+    color: #8a1300;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+.discover-section div figure figcaption>p:nth-of-type(2) {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.discover-section div:nth-of-type(2)>figure>img {
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+
+/* best sellers section design */
+
+.bestsellers-section {
+    background-color: #370101db;
+    justify-content: space-evenly;
+    background-size: cover;
+    text-align: center;
+}
+
+.bestsellers-section>div {
+    display: flex;
+    justify-content: center;
+}
+
+.bestsellers-section p {
+    max-width: 400px;
+    margin-left: 37%;
+    color: rgb(168, 164, 164);
+}
+
+.bestsellers-section>div figure {
+    margin: 3em 7em 3em 7em;
+}
+
+.bestsellers-section>div figure>img {
+    padding: 2em;
+    margin: 1em;
+}
+
+.bestsellers-section>div figure>img:hover {
+    border: 2px solid;
+    border-radius: 119px;
+    background-color: #bba47929;
+}
+
+.bestsellers-section>h3 {
+    position: absolute;
+    font-size: 11em;
+    text-align: center;
+    color: rgba(29, 12, 12, 0.38);
+    z-index: -1;
+    margin-left: 40px;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+.bestsellers-section button {
+    margin: 2em;
+}
+
+.bestsellers-section button:hover {
+    background-color: #e07a7a;
+    transition: 1s ease-in-out;
+}
+
+.bestsellers-section button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* farm section design */
+
+.farm-section {
+    margin: 4em 3em 3em 2em;
+    display: flex;
+}
+
+.farm-section .backsvg {
+    height: 216px;
+    width: 90px;
+    position: relative;
+    background-repeat: repeat;
+    background: url(./logo/line.svg);
+    margin-top: -102px;
+    margin-left: -6em;
+    z-index: -1;
+}
+
+.farm-section>article {
+    padding: 4em 6em 3em 9em;
+    max-width: 50%;
+}
+
+.farm-section>article h3 {
+    padding-bottom: 0.5em;
+}
+
+.farm-section>article>p {
+    margin-top: 1em;
+}
+
+.farm-section>img {
+    padding: 4em 3em 3em 3em;
+    position: relative;
+}
+
+
+/* Jenkins map */
+
+.jenkins-map h3 {
+    padding: 2em;
+    margin-left: 35%;
+}
+
+.jenkins-map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* ***********************************************************
+***********************************************************
+About us page styling
+***********************************************************
+***********************************************************
+ */
+
+.about-title-cover {
+    background-image: url(./images/about-us.jpg);
+    background-size: cover;
+    height: 500px;
+    background-color: #f4e4e4;
+    margin: 0 5em 0em 5em;
+}
+
+.about-title-cover div {
+    background: #642627b0;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 35%;
+}
+
+.about-title-cover div h3 {
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 45px;
+    font-size: 2.4em;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    border-bottom: 5px double #d49f85;
+}
+
+.about-title-cover div h4 {
+    margin-top: 150px;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 40px;
+    color: #e2cc9f;
+    font-size: 1.6em;
+}
+
+
+/* about description  section */
+
+.about-description {
+    margin: 5em;
+}
+
+.about-description .discover {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0 2em 0;
+}
+
+.about-description .discover article {
+    max-width: 45%;
+}
+
+.about-description .discover article h2 {
+    padding-top: .5em;
+}
+
+.about-description .discover article p {
+    padding: 1em 0 1em 0;
+}
+
+.about-description .discover article button a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-description .discover article button:hover {
+    background-color: #e07a7a;
+    transition: 1s ease-in-out;
+}
+
+.about-description .early-beginings {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0 2em 0;
+}
+
+.about-description .early-beginings article {
+    max-width: 45%;
+}
+
+.about-description .early-beginings article h3 {
+    padding-bottom: 1em;
+    ;
+}
+
+
+/* team section */
+
+.team-section {
+    margin: 2em 12em 10em 12em;
+}
+
+.team-section .bg-square {
+    height: 311px;
+    width: 351px;
+    background: #fab8b8;
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 1%;
+}
+
+.team-section h3 {
+    margin-bottom: 2em;
+}
+
+.team-section img {
+    margin-left: 30%;
+    position: relative;
+}
+
+.team-section p {
+    margin-top: 2em;
+}
+
+
+/* ***********************************************************
+***********************************************************
+Our meat  page styling
+***********************************************************
+***********************************************************
+ */
+
+
+/* heros section */
+
+.our-meat-title-cover {
+    background-image: url(./images/our-meat.jpg);
+    background-size: cover;
+    height: 500px;
+    background-color: #f4e4e4;
+    margin: 0 5em 0em 5em;
+}
+
+.our-meat-title-cover div {
+    background: #642627b0;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 35%;
+}
+
+.our-meat-title-cover div h3 {
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 37px;
+    font-size: 2.4em;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    border-bottom: 5px double #d49f85;
+}
+
+.our-meat-title-cover div h4 {
+    margin-top: 150px;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 38px;
+    color: #e2cc9f;
+    font-size: 1.6em;
+}
+
+
+/* Contact us section style */
+
+.meat-products {
+    padding: 2em 8em 2em 8em;
+}
+
+.meat-products h3 {
+    font-size: 2em;
+    color: rgb(85, 32, 32);
+    text-align: center;
+    padding-bottom: 1em;
+    margin: 2em;
+}
+
+.meat-products div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5em 3em 5em;
+}
+
+.meat-products div figure {
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid #ffd2cd;
+}
+
+.meat-products div figure img {
+    padding-bottom: 1em;
+}
+
+.meat-products div figure figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    color: #7a1b1b;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.meat-products div figure p {
+    text-align: center;
+}
+
+
+/*Link to shop section */
+
+.link-to-shop {
+    margin: 2em 8em 2em 8em;
+}
+
+.link-to-shop div {
+    display: flex;
+    margin: 2em 4em auto 4em;
+}
+
+.link-to-shop div article p {
+    font-size: 1em;
+}
+
+.link-to-shop div span {
+    min-width: 200px;
+    margin-top: 6em;
+}
+
+.link-to-shop div button {
+    margin-top: 2em;
+}
+
+.link-to-shop div button:hover {
+    background-color: #e07a7a;
+    transition: 1s ease-in-out;
+}
+
+.link-to-shop div button a {
+    text-decoration: none;
+    color: black;
+}
+
+.link-to-shop div>article {
+    margin: 2em 7em 2em 2em;
+}
+
+.link-to-shop div>article>h2 {
+    color: #3f3823;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.link-to-shop div>article>h2 span {
+    color: #7a1b1b;
+}
+
+
+/* ***********************************************************
+***********************************************************
+COntact us page styling
+***********************************************************
+***********************************************************
+ */
+
+
+/* title cover design */
+
+.contact-us-title-cover {
+    background-image: url(./images/contact.jpg);
+    background-size: cover;
+    height: 500px;
+    background-color: #f4e4e4;
+    margin: 0 5em 0em 5em;
+}
+
+.contact-us-title-cover div {
+    background: #642627b0;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 35%;
+}
+
+.contact-us-title-cover div h3 {
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 32px;
+    font-size: 2.4em;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    border-bottom: 5px double #d49f85;
+}
+
+.contact-us-title-cover div h4 {
+    margin-top: 150px;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 30px;
+    color: #e2cc9f;
+    font-size: 1.6em;
+}
+
+
+/*Visit us section */
+
+.visit-us div {
+    display: flex;
+    margin: 2em 4em auto 4em;
+}
+
+.visit-us div>article {
+    margin: 2em 7em 2em auto;
+}
+
+.visit-us div>article>h2 {
+    color: #463d25;
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+.visit-us div>article>h2 span {
+    color: #7a1b1b;
+}
+
+.visit-us>article>p {
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+}
+
+
+/* Contact us section style */
+
+.contact {
+    padding: 2em 8em 6em 8em;
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact div figure {
+    width: 220px;
+}
+
+.contact div figure img {
+    margin-left: 5.5em;
+    padding-bottom: 1em;
+}
+
+.contact div figure figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    color: #7a1b1b;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.contact div figure p {
+    text-align: center;
+}
+
+
+/* butchers maps section style */
+
+.butchers-map>h2 {
+    color: #463d25;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.butchers-map>h2 span {
+    color: #7a1b1b;
+}
+
+.butchers-map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* footer design*/
+
+footer {
+    height: 440px;
+    background-color: #262525;
+    padding: 4em 8em 0em 8em;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer article:nth-of-type(1) {
+    margin-top: 4em;
+}
+
+footer article:nth-of-type(1)>p {
+    color: rgb(153, 152, 152);
+    width: 200px;
+    font-size: 0.9em;
+}
+
+footer article:nth-of-type(1) h4 {
+    color: rgb(194, 174, 121);
+    font-family: "Playfair Display", "Merriweather", "Open Sans", "Source Serif 4", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+footer article:nth-of-type(2)>a div {
+    width: 145px;
+    background-image: url(./logo/logo-white.svg), url(./logo/logo-white.png);
+    margin-top: .3em;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+footer article:nth-of-type(3) {
+    margin-top: 4em;
+    width: 238px;
+}
+
+footer article:nth-of-type(3)>h5 {
+    color: rgb(167, 148, 96);
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
+footer article:nth-of-type(3)>p {
+    color: rgb(226, 226, 226);
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+footer article:nth-of-type(3)>p>a>img {
+    margin: 0em 1em -0.5em 0em;
+}
+
+footer ul {
+    text-align: center;
+    margin-top: 1em;
+}
+
+footer ul li {
+    float: left;
+    padding: 1em;
+    text-align: center;
+    padding: 1em 1em 0 0;
+}
+
+footer ul li:first-child a div {
+    width: 40px;
+    height: 40px;
+    background-image: url('./logo/instagram.svg'), url(./logo/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer ul li:last-child a div {
+    width: 40px;
+    height: 40px;
+    background-image: url('./logo/facebook.svg'), url(./logo/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer>p {
+    padding-top: 3em;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 0.9em;
+}
+
+
+/* End of style */

@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*================================== END OF ERIC MEYER CSS RESET ====================*/
+
+body {
+  width: vw;
+  height: 100vh;
+  margin: auto;
+  color: white;
+}
+
+.container {
+  background: radial-gradient(#642627, #191919);
+}
+nav > div {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  padding: 1em 3em 1em 3em;
+}
+
+/* Heading section */
+
+h1 {
+  font-size: 11em;
+  color: white;
+}
+
+h2{
+    font-size: 3em;
+    color: #642627;
+  }
+  h3{
+    color: #642627;
+    font-size: 3em;
+  }
+  h4{
+  font-size:2em;
+  color: #642627;
+
+}
+
+figcaption{
+    color:black;
+    font-size: 1em;
+    margin-top: 1em;
+}
+button{
+  text-align:center;
+}
+/* Hero section design  */
+
+main > div:nth-child(2) {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+main > div h1 {
+text-align: center;
+position: absolute;
+  margin-left: 40%;
+  margin-top: 0.2em;
+}
+
+main>div>img:nth-last-of-type(2){
+  margin-bottom: -5em;
+}
+main > div h1:nth-child(2) {
+    margin-top: 0.8em;
+}
+
+
+/* second section design */
+div:nth-of-type(2){
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div:nth-of-type(2)>figure{
+  margin: 5em ;
+}
+div:nth-of-type(2)>h4{
+  text-align:center;
+}
+h4:nth-of-type(1){
+  padding:1em;
+  margin:2em 14em 2em 14em;
+  text-align:center;
+}
+
+
+
+/* third section design */
+
+div:nth-of-type(3){
+  display: flex;
+ margin:0em 5em 0em 5em;
+}
+div:nth-of-type(3)>img{
+  margin-top: -6em;
+  padding:0em 2em 0em 2em;
+}
+div:nth-of-type(3)>div>p{
+  margin-top: 1em;
+  color:black;
+  font-size:1.7em;
+  
+}
+section div:nth-of-type(3){
+  display: none;
+  background: red;
+}
+
+
+
+
+
+/* fourth section design */
+div:nth-of-type(4){
+  display: flex;
+  justify-content: space-evenly;
+}
+div:nth-of-type(4)>img{
+  margin: 5em ;
+  
+}
+h4:nth-of-type(2){
+  padding:1em;
+  margin:2em 14em 2em 14em;
+  text-align:center;
+}
+
+/* fifth section design */
+
+div:nth-of-type(5)>img,h4{
+  text-align:center;
+  margin-left:25%;
+  z-index: 10000;
+  position: relative;
+}
+
+
+/* sixth section design */
+div:nth-of-type(6){
+  display: flex;
+  justify-content: space-between;
+  margin-top: -4em;
+  background-color: #4c4c4c;
+}
+
+div:nth-of-type(6)>div>h2{
+  margin-top: 3em;
+  margin-left: 3em;
+  color: wheat;
+
+}
+
+/* footer */
+footer{
+  height:600px;
+  background-image: url(./logo/footer-hd.png);
+  background-size: cover;
+background-color: #000000e3;
+}
+
+footer>img{
+text-align:center;
+margin-left: 46%;
+margin-top:2em;
+}
+footer>h3{
+  padding: 3em 5em 0em 5em;
+  text-align:center;
+  color:white;
+}
