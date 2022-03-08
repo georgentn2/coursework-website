@@ -1,0 +1,2 @@
+[23-Feb-2022 17:58:27 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'cabella_demo'@'localhost' (using password: YES) in /home/cabellah/antoantonygeorge/demo/Kit of parts for a simple CMS, powered by PHP and MySQL-20220223 (1)/index.php on line 16
+[23-Feb-2022 17:59:31 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'cabella_demo'@'localhost' (using password: YES) in /home/cabellah/antoantonygeorge/demo/Kit of parts for a simple CMS, powered by PHP and MySQL-20220223 (1)/index.php on line 16
